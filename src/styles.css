@@ -1,0 +1,38 @@
+* {}
+
+div {
+    display: flex;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+#content {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: pink;
+}
+
+#logo {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+
+#header {
+    height: 100px;
+    background-color: aqua;
+    justify-content: space-around;
+}
+
+#footer {
+    background-color: beige;
+}
+
+#homepage {
+    flex-direction: column;
+}
