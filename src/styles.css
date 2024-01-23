@@ -17,6 +17,10 @@ body {
     background-color: pink;
 }
 
+#main-body {
+    height: 100%;
+}
+
 #logo {
     background-color: blue;
     height: 50px;
@@ -35,4 +39,17 @@ body {
 
 #homepage {
     flex-direction: column;
+}
+
+#menu {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }

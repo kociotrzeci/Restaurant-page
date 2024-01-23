@@ -6,6 +6,7 @@ import { contact } from './contact.js';
 console.log('do i work, with autoreload?');
 const content = document.getElementById('content');
 const mainBody = document.createElement('div');
+mainBody.id = 'main-body'
 const footer = document.createElement('div');
 const header = document.createElement('div');
 header.id = 'header';
@@ -13,14 +14,17 @@ const logo = document.createElement('img');
 logo.id = 'logo';
 const buttonContainer = document.createElement('div');
 const homepageButton = document.createElement('button');
+homepageButton.textContent = 'HOME';
 homepageButton.addEventListener('click', () => {
     reset(homepage());
 })
 const menuButton = document.createElement('button');
+menuButton.textContent = 'MENU';
 menuButton.addEventListener('click', () => {
     reset(menu());
 })
 const contactButton = document.createElement('button');
+contactButton.textContent = 'CONTACT';
 contactButton.addEventListener('click', () => {
     reset(contact());
 })
