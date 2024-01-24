@@ -1,5 +1,3 @@
-* {}
-
 div {
     display: flex;
 }
@@ -14,44 +12,60 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: pink;
-}
 
-#main-body {
-    height: 100%;
-}
+    #header {
+        height: 100px;
+        background-color: aqua;
+        justify-content: space-around;
 
-#header {
-    height: 100px;
-    background-color: aqua;
-    justify-content: space-around;
-
-    #logo {
-        background-color: blue;
-        height: 50px;
-        width: 50px;
+        #logo {
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+        }
     }
 
-}
+    #main-body {
+        height: 100%;
 
+        #homepage {
+            position: relative;
+            flex-direction: column;
+            align-items: center;
 
+            * {
+                padding: 100px;
+                z-index: 1;
+                color: ivory;
+            }
 
-#footer {
-    background-color: beige;
-}
+            #blur {
+                position: absolute;
+                display: block;
+                background-image: url('./assets/homepage.jpg');
+                filter: blur(8px);
+                filter: brightness(60%);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
 
-#homepage {
-    flex-direction: column;
-}
+        #menu {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
 
-#menu {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+        #contact {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
-#contact {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    #footer {
+        background-color: beige;
+    }
 }
