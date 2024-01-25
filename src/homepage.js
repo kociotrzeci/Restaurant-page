@@ -8,10 +8,10 @@ function homepage() {
     const head = document.createElement('h1');
     head.textContent = 'FanKasz'
     const paragraph = document.createElement('p');
-    paragraph.textContent = "When they kill an ox, a hog or a ram, they don't spoil the smallest drop of blood, but they roll it out in a vessel; having mixed into it barley mash or calamari, they stuff the guts of the animal with it, brew it together in a cauldron and wrap it with a wreath on a big bowl, and so they put it on the table at every dinner and eat it for a great specialty.They also do it in the houses of the nobility; I was also served it to make me miserable, until I said that Poles are not worthy to eat it, because they would be enemies of our dogs, as it is their food.";
+    paragraph.textContent = "When they slaughter an ox, a hog, or a ram, they waste not the smallest drop of blood, but collect it in a vessel; having mixed into it barley mash or calamari, they stuff the innards of the beast with it, brew it together in a cauldron and garnish it with a wreath on a large bowl, and thus they place it on the table at every supper and consume it as a great delicacy. They also prepare it in the houses of the gentry; I was also served it to my discomfort, until I declared that Poles are not fit to consume it, for they would be foes of our dogs, as it is their sustenance";
+    backgroundBlur.appendChild(head);
+    backgroundBlur.appendChild(paragraph);
     homepage.appendChild(backgroundBlur);
-    homepage.appendChild(head);
-    homepage.appendChild(paragraph);
     return (homepage);
 }
 
