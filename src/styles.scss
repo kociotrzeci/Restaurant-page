@@ -1,3 +1,23 @@
+$cameo: #d6b69a;
+$cocoa-brown: #2b2221;
+$cement: #967764;
+$cloudy: #eee9df;
+$cloudy-backgroud: #eee9dfd2;
+$manatee: #9b9b9c;
+$boulder: #767676;
+$shingle-fawn: #694835;
+$scorpion: #676364;
+$piper: #bc5425;
+
+
+@font-face {
+    font-family: 'headerFont';
+    src: url('./assets/HoltwoodOneSC-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 div {
     display: flex;
 }
@@ -15,11 +35,12 @@ body {
 
     #header {
         height: 100px;
-        background-color: aqua;
+        background-color: $cocoa-brown;
         justify-content: space-around;
+        align-items: center;
 
         #logo {
-            background-color: blue;
+            background-color: $cement;
             height: 50px;
             width: 50px;
         }
@@ -30,25 +51,49 @@ body {
 
         #homepage {
             position: relative;
-            flex-direction: column;
-            align-items: center;
-
-            * {
-                padding: 100px;
-                z-index: 1;
-                color: ivory;
-            }
+            background-image: url('./assets/homepage.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 
             #blur {
-                position: absolute;
-                display: block;
+                flex-direction: column;
+                align-items: center;
+                justify-content: end;
+                backdrop-filter: blur(8px);
+                backdrop-filter: brightness(70%);
                 background-image: url('./assets/homepage.jpg');
-                filter: blur(8px);
-                filter: brightness(60%);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+
+                h1 {
+                    position: absolute;
+                    top: 10%;
+                    text-align: center;
+                    width: 100%;
+                    backdrop-filter: blur(10px) brightness(70%);
+                    color: $cloudy;
+                    font-size: 5rem;
+                    font-family: 'headerFont';
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 1.5rem;
+                    margin: 0px;
+                    padding: 40px;
+                    padding-bottom: 25px;
+                    margin-left: 60vw;
+                    background-color: $cloudy-backgroud;
+                    color: $cocoa-brown;
+                    border-radius: 5px 0 0 0;
+                }
+
             }
+
+
+
         }
 
         #menu {
@@ -66,6 +111,6 @@ body {
     }
 
     #footer {
-        background-color: beige;
+        background-color: $cocoa-brown;
     }
 }
