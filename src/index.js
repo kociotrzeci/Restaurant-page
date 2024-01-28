@@ -13,6 +13,7 @@ header.id = 'header';
 const logo = document.createElement('img');
 logo.id = 'logo';
 const buttonContainer = document.createElement('div');
+buttonContainer.id = 'button-container';
 const homepageButton = document.createElement('button');
 homepageButton.textContent = 'HOME';
 homepageButton.addEventListener('click', () => {
@@ -45,4 +46,4 @@ function reset(element) {
     if (mainBody.lastChild) mainBody.removeChild(mainBody.lastChild);
     mainBody.appendChild(element);
 }
-reset(homepage());
+reset(menu());
