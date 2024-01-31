@@ -19,8 +19,6 @@ function dish(imageAdress, name, textContent) {
 
 }
 
-
-
 function menu() {
     const page = document.createElement('div');
     page.id = 'menu';

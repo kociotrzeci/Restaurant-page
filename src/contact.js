@@ -1,5 +1,3 @@
-
-
 function contact() {
     const contact = document.createElement('div');
     contact.id = 'contact';
@@ -7,16 +5,21 @@ function contact() {
     const addr1 = document.createElement('p');
     const addr2 = document.createElement('p');
     const phone = document.createElement('p');
-
-    head.textContent = 'FANATICS OF KASZANKA'
+    const image = document.createElement('div');
+    image.id = 'image';
+    const textContainer = document.createElement('div');
+    textContainer.id = 'text-container'
+    head.textContent = 'Fan Kasz'
     addr1.textContent = 'Nostreet 31'
     addr2.textContent = '66-777 Nowhere'
     phone.textContent = '765432123';
 
-    contact.appendChild(head);
-    contact.appendChild(addr1);
-    contact.appendChild(addr2);
-    contact.appendChild(phone);
+    textContainer.appendChild(head);
+    textContainer.appendChild(addr1);
+    textContainer.appendChild(addr2);
+    textContainer.appendChild(phone);
+    contact.appendChild(textContainer);
+    contact.appendChild(image);
     return (contact);
 }
 

@@ -25,6 +25,9 @@ body {
     margin: 0;
 }
 
+* {
+    user-select: none;
+}
 
 #content {
     height: 100%;
@@ -106,7 +109,7 @@ body {
                     margin: 0px;
                     padding: 40px;
                     padding-bottom: 25px;
-                    margin-left: 60vw;
+                    margin-left: 50%;
                     background-color: $cloudy-backgroud;
                     color: $cocoa-brown;
                     border-radius: 30px 0 0 0;
@@ -174,9 +177,40 @@ body {
         }
 
         #contact {
+            position: relative;
+            align-self: center;
             width: 100%;
-            flex-direction: column;
+            height: 100%;
             align-items: center;
+            color: $cocoa-brown;
+            gap: 10px;
+
+            #image {
+                width: 60%;
+                height: 100%;
+                background-image: url('./assets/homepage.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #text-container {
+                width: 40%;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20%;
+
+                p {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    padding: 0px;
+                    margin: 0px;
+                }
+
+                h3 {
+                    font-family: 'headerFont';
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
@@ -184,5 +218,19 @@ body {
         background-color: $cocoa-brown;
         color: $manatee;
         justify-content: center;
+        align-content: center;
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 0.8rem;
+            padding: 5px;
+            margin: 0px;
+            color: $manatee;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $cloudy;
+        }
     }
 }

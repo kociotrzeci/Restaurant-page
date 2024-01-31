@@ -33,12 +33,18 @@ buttonContainer.appendChild(homepageButton);
 buttonContainer.appendChild(menuButton);
 buttonContainer.appendChild(contactButton);
 
-
 header.appendChild(logo);
 header.appendChild(buttonContainer);
 
 footer.id = 'footer'
-footer.textContent = 'to ja zrobiłem';
+const footerText = document.createElement('p');
+footerText.textContent = 'made by';
+const link = document.createElement('a');
+link.href = 'https://github.com/kociotrzeci';
+link.textContent = 'kociotrzeci'
+footer.appendChild(footerText);
+footer.appendChild(link);
+
 content.appendChild(header);
 content.appendChild(mainBody);
 content.appendChild(footer);
@@ -46,4 +52,4 @@ function reset(element) {
     if (mainBody.lastChild) mainBody.removeChild(mainBody.lastChild);
     mainBody.appendChild(element);
 }
-reset(menu());
+reset(homepage());
